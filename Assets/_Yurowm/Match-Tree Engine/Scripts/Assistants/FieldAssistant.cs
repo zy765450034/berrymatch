@@ -38,8 +38,11 @@ public class FieldAssistant : MonoBehaviour {
 		SessionAssistant.main.eventCount ++;
 
         SessionAssistant.main.StartSession(LevelProfile.main.target, LevelProfile.main.limitation);
-
         GameCamera.main.transform.position = new Vector3(0, 20, -10);
+
+		yield return 0;
+
+
     }
 
 	// Field generator

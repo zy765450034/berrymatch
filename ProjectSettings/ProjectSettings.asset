@@ -9,8 +9,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: yurowm
-  productName: BMTE PRO
+  companyName: EveryStudio
+  productName: "\u30EB\u30EB\u30ED\u30ED"
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_ShowUnitySplashScreen: 1
@@ -158,9 +158,8 @@ PlayerSettings:
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 2
   androidSplashScreen: {fileID: 2800000, guid: 2b9d87a275174a842874683b248b40b7, type: 3}
-  AndroidKeystoreName: D:/Dropbox/Assets/Tools/Berry Match-Three Engine/Berry Match
-    Three v4/GooglePlayKeyPRO.keystore
-  AndroidKeyaliasName: moneycan
+  AndroidKeystoreName: G:/repository/berrymatch/everystudio_everystudio_everypass.keystore
+  AndroidKeyaliasName: everystudio
   AndroidTVCompatibility: 0
   AndroidIsGame: 0
   androidEnableBanner: 0

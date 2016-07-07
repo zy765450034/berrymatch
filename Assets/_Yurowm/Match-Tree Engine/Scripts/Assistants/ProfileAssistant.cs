@@ -52,11 +52,13 @@ public class ProfileAssistant : MonoBehaviour {
             return;
         }
         #endif
-		
+
+		/*
 		if (PlayerPrefs.GetInt("FirstPass") != 1) {
             StartCoroutine(FirstPass());
             return;
         }
+        */
 		
     }
 

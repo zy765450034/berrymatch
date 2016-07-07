@@ -15467,7 +15467,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 462000, guid: e1840ee7b5445994cbb7bb281433d730, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 11431744, guid: e1840ee7b5445994cbb7bb281433d730, type: 2}
       propertyPath: m_Color.a
@@ -15723,6 +15723,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11462448, guid: e1840ee7b5445994cbb7bb281433d730, type: 2}
       propertyPath: hideNewCategories
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 147232, guid: e1840ee7b5445994cbb7bb281433d730, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11462448, guid: e1840ee7b5445994cbb7bb281433d730, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11462448, guid: e1840ee7b5445994cbb7bb281433d730, type: 2}
+      propertyPath: lockOnStart
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -28310,7 +28322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile:
-    levelID: 17296
+    levelID: 67668
     level: 3
     width: 9
     height: 9
@@ -37771,6 +37783,14 @@ MonoBehaviour:
     soundtrack: '-'
     default_page: 0
     setTimeScale: 0
+    timeScale: 1
+  - name: MainBG
+    panels:
+    - {fileID: 1369034615}
+    ignoring_panels: []
+    soundtrack: '-'
+    default_page: 0
+    setTimeScale: 1
     timeScale: 1
 --- !u!82 &751888510
 AudioSource:
@@ -87134,7 +87154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   profile:
-    levelID: 19774
+    levelID: 71222
     level: 1
     width: 9
     height: 6
