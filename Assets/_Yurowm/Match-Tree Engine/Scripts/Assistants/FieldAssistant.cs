@@ -53,9 +53,8 @@ public class FieldAssistant : MonoBehaviour {
 
         Slot.folder = new GameObject().transform;
         Slot.folder.name = "Slots";
-        
 
-        Slot.all.Clear();
+		Slot.all.Clear();
 
         Vector3 fieldDimensions = new Vector3(field.width - 1, field.height - 1, 0) * ProjectParameters.main.slot_offset;
 
@@ -151,10 +150,11 @@ public class FieldAssistant : MonoBehaviour {
                     slot.chip = c_obj.GetComponent<Chip>();
                 }
             }
-            #endregion
-        }
+			#endregion
 
-        Slot.Initialize();
+		}
+
+		Slot.Initialize();
 
         foreach (int2 coord in field.wall_vertical) {
             yield return 0;
@@ -212,6 +212,10 @@ public class FieldAssistant : MonoBehaviour {
         yield return 0;
 
         SUBoosterButton.Generate(Slot.folder);
+
+		// çLçêópÇ…à íuÇÇ∏ÇÁÇµÇƒÇ‹Ç∑
+		Slot.folder.transform.localPosition = new Vector3(0.0f, 0.45f, 0.0f);
+
 	}
 
 	// Removing old field
