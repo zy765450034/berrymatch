@@ -444,7 +444,7 @@ PlayerSettings:
     1: SOOMLA_FACEBOOK;SOOMLA_OPEN_SOURCE
     2: 3;SOOMLA_FACEBOOK;SOOMLA_OPEN_SOURCE
     4: 
-    7: 
+    7: UNITY_PURCHASING
   platformArchitecture:
     iOS: 0
   scriptingBackend:
