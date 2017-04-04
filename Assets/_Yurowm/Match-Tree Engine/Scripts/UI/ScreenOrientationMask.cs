@@ -16,8 +16,11 @@ public class ScreenOrientationMask : MonoBehaviour {
 	void UpdateContent () {
         bool landscape = Screen.width > Screen.height;
         bool visible = (screenOrientation == ScreenOrientation.Portrait && !landscape) || (screenOrientation == ScreenOrientation.Landscape && landscape);
-        foreach (Transform child in transform)
-            child.gameObject.SetActive(visible);
+		foreach (Transform child in transform)
+		{
+			Debug.LogError(child.gameObject.name);
+			child.gameObject.SetActive(visible);
+		}
 	}
 
     public enum ScreenOrientation {Portrait, Landscape};

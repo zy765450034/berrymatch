@@ -214,7 +214,7 @@ public class FieldAssistant : MonoBehaviour {
         SUBoosterButton.Generate(Slot.folder);
 
 		// L—p‚ÉˆÊ’u‚ğ‚¸‚ç‚µ‚Ä‚Ü‚·
-		Slot.folder.transform.localPosition = new Vector3(0.0f, 0.45f, 0.0f);
+		Slot.folder.transform.localPosition = new Vector3(0.0f, 0.35f, 0.0f);
 
 	}
 
