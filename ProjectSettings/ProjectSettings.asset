@@ -573,14 +573,14 @@ PlayerSettings:
     4: 
     7: UNITY_PURCHASING
   platformArchitecture:
-    iOS: 0
+    iOS: 2
   scriptingBackend:
     Android: 0
     Metro: 2
     Standalone: 0
     WP8: 2
     WebGL: 1
-    iOS: 0
+    iOS: 1
   incrementalIl2cppBuild:
     iOS: 0
   additionalIl2CppArgs: 
