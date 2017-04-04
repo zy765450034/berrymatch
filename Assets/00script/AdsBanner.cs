@@ -23,7 +23,7 @@ public class AdsBanner : MonoBehaviour {
 		m_bShown = false;
 		m_bannerView = null;
 
-		m_bIsTate = false;
+		m_bIsTate = Screen.height > Screen.width ? true : false;
 		m_bIsTatePre = !m_bIsTate;
 
 		UIAssistant.onScreenResize += OnScreenResize;
@@ -44,21 +44,24 @@ public class AdsBanner : MonoBehaviour {
 
 		if(m_bIsTatePre != m_bIsTate)
 		{
-			if( m_bannerView != null)
+			if (m_bannerView != null)
 			{
 				m_bannerView.Destroy();
-				AdPosition p = AdPosition.Bottom;
-				if( m_bIsTate == false)
-				{
-					p = AdPosition.BottomRight;
-				}
-				m_bannerView = new BannerView(UNIT_ID, AdSize.Banner, p);
-				AdRequest request = new AdRequest
-					.Builder()
-					.AddTestDevice("30ec665ef7c68238905003e951174579")
-					.AddTestDevice("B58A62380C00BF9DC7BA75C756B5F550").Build();
-				m_bannerView.LoadAd(request);
 			}
+			AdPosition p = AdPosition.Bottom;
+			if( m_bIsTate == false)
+			{
+				p = AdPosition.BottomRight;
+			}
+			m_bannerView = new BannerView(UNIT_ID, AdSize.Banner, p);
+			AdRequest request = new AdRequest
+				.Builder()
+				.AddTestDevice("30ec665ef7c68238905003e951174579")
+				.AddTestDevice("B58A62380C00BF9DC7BA75C756B5F550").Build();
+			m_bannerView.LoadAd(request);
+		}
+		else
+		{
 			m_bannerView.Show();
 		}
 		m_bIsTatePre = m_bIsTate;
@@ -73,7 +76,6 @@ public class AdsBanner : MonoBehaviour {
 
 	private void OnShowPage( string _strName)
 	{
-		Debug.LogError(_strName);
 		switch (_strName)
 		{
 			case "Booster":
