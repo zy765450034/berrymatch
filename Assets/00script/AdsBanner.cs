@@ -31,6 +31,9 @@ public class AdsBanner : MonoBehaviour {
 
 		show();
 
+		// なにもこんなところでやらなくてもいいんだけど
+		Application.targetFrameRate = 60;
+
 	}
 
 	private void OnScreenResize()
